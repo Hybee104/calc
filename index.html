@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <script src="cal.js"></script>
+    <script src="jquery/jquery.js"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="w3.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <title>cal</title>
+   <style>
+
+   
+    
+   </style>
+
+  
+</head>
+<body>
+
+
+  
+    <section>
+       
+      
+    
+
+      </div>
+
+        <div class="container">
+
+          <span>Calc</span>
+
+          <span class="theme-btn">
+
+            <button class="btn2 w3-right w3-margin"> </button>  
+      
+          <button class="btn1 w3-right w3-margin"></button> 
+      
+
+          </span>
+
+          
+            <input id="display">
+            <div class="buttons">
+                <div class="button" onclick="insrt(7)">7</div>
+                <div class="button" onclick="insrt(8)">8</div>
+                <div class="button" onclick="insrt(9)">9</div>
+                <div id="del" class="button" onclick="del()">Del</div>
+                <div class="button" onclick="insrt(4)">4</div>
+                <div class="button" onclick="insrt(5)">5</div>
+                <div class="button" onclick="insrt(6)">6</div>
+                <div class="button" onclick="insrt('+')">+</div>
+                <div class="button" onclick="insrt(1)">1</div>
+                <div class="button" onclick="insrt(2)">2</div>
+                <div class="button" onclick="insrt(3)">3</div>
+                <div class="button" onclick="insrt('-')">-</div>
+                <div class="button" onclick="insrt('.')">.</div>
+                <div class="button" onclick="insrt(0)">0</div>
+                <div class="button" onclick="insrt('/')">/</div>
+                <div class="button" onclick="insrt('*')">x</div>
+                <div id="reset" class="button" onclick="C()">Reset</div>
+                <div id="reet" class="butto" onclick=""></div>
+                <div id="equal" class="button" onclick="equal()">=</div>
+           
+              </div>
+        </div>
+
+
+
+
+
+     </section>
+   
+     
+    
+</body>
+</html>
+
+  <script>
+ 
+   $("document").ready(function(){
+     $(".btn1").click(function(){
+      $("body").css("background", "darkslateblue")
+      $("#display").css("background", "white")
+      $("#display").css("color", "black")
+      $(".buttons").css("background", "darkslateblue")
+      $(".buttons").css("background", "darkslateblue")
+      $("#reset").css("background", "darkslategray")
+      $("#del").css("background", "darkslategray")
+      $("span").css("color", "white")
+     })
+
+     $(".btn2").click(function(){
+      $("body").css("background", "white")
+      $("#display").css("background", "grey")
+      $("#display").css("color", "white")
+      $(".buttons").css("background", "grey")
+      $("#reset").css("background", "aqua")
+      $("#del").css("background", "aqua")
+      $("span").css("color", "black")
+     })
+   })
+
+  
+ 
+   </script>
